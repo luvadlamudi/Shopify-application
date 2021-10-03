@@ -1,9 +1,3 @@
-<button (click)="test()">hello world</button>
-<div>
-    <div *ngFor="let posts of foundPosts">
-        <p>{{posts?.body}}</p>
-        <p>{{posts?.userId}}</p>
-        <p>{{posts?.id}}</p>
-        <p>{{posts?.title}}</p>
-    </div>
-</div>
+<app-navmenu (switch)="switchRoute($event)">
+</app-navmenu>
+<app-shop-page *ngIf="currentRoute == 'Store'"></app-shop-page>

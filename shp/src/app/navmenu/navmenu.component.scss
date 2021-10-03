@@ -1,0 +1,15 @@
+.navmenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    button {
+        margin-right: 1em;
+        margin-bottom: 1em;
+        border: 1px solid lightcyan;
+        background-color: rgb(97, 224, 224);
+        border-radius: 2em;
+    }
+}

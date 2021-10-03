@@ -1,0 +1,10 @@
+<div>New items listed: {{listOfItems?.length}}</div>
+<button (click)="sortByPrice()">Sort by price</button>
+
+<div *ngFor="let item of listOfItems" class="card">
+    <img [src]="item.image" height="20px" width="20px">
+    <p>{{item.title}}</p>
+    <label>Description: </label>
+    <p>{{item.description}}</p>
+    <button> Buy now! ${{item.price}}</button>
+</div>

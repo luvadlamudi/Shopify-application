@@ -8,12 +8,15 @@ import { Posts } from './interfaces/posts';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  foundPosts: Posts[] = [];
-  constructor(public com: CommunicationService) {}
-  test() {
-   this.com.test().subscribe((value: Posts)=>{
-     this.foundPosts.push(value);
-   })
+
+  currentRoute: string = "LandingPage";
+
+  constructor() {}
+
+  switchRoute(newRoute: string){
+    console.log(`new route is ${newRoute}`)
+    this.currentRoute = newRoute;
   }
+
 }
 
